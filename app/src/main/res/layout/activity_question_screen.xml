@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.questions.QuestionScreen">
+
+    <RelativeLayout
+        android:id="@+id/profile_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/monet_logo_top"/>
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/sb_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:max="4"
+        android:min="1"
+        android:progress="1"
+        android:focusable="false"
+        android:thumb="@color/colorPrimaryDark"
+        android:progressBackgroundTint="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/tv_questionNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="0dp"
+            android:gravity="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_questionSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textSize="16sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rate_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not at all likely"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentStart="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extremely likely"
+                android:textColor="@color/colorBlack"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <!--Radio Recycler View-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/radio_rv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:overScrollMode="never"
+            android:layout_marginBottom="80dp"
+            android:visibility="gone"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:fillViewport="true"
+            android:groupIndicator="@null">
+        <LinearLayout
+            android:id="@+id/grid_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="80dp"
+            android:paddingBottom="16dp"
+            android:layout_marginLeft="10dp"
+            android:groupIndicator="@null"
+            android:orientation="vertical"
+            android:visibility="gone"/>
+        </ScrollView>
+
+        <EditText
+            android:id="@+id/edt_questionType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_box"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="top|left"
+            android:inputType="text"
+            android:minHeight="200dp"
+            android:maxHeight="200dp"
+            android:longClickable="false"
+            android:hint="write your answer here"
+            android:lines="8"
+            android:singleLine="false"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_questionNext"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btn_pro_gray"
+            android:text="next"
+            android:layout_marginTop="5dp"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>

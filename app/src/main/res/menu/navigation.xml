@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_campaigns"
+        android:icon="@drawable/btn_white_capsule"
+        android:title="@string/title_campaigns" />
+
+    <item
+        android:id="@+id/navigation_new"
+        android:icon="@drawable/btn_white_capsule"
+        android:title="@string/title_new" />
+
+    <item
+        android:id="@+id/navigation_popular"
+        android:icon="@drawable/btn_white_capsule"
+        android:title="@string/title_popular" />
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/btn_white_capsule"
+        android:title="@string/title_more" />
+</menu>

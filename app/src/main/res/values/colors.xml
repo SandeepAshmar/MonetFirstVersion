@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#352063</color>
+    <color name="colorAccent">#352063</color>
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorGray">#b4b3b3</color>
+    <color name="colorBtnGray">#b7b7b7</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="colorCalender">#4050a2</color>
+    <color name="colorBlack">#FF000000</color>
+    <color name="colorNavSelect">#2cbe00</color>
+    <color name="colorLightGray">#e6e6e6</color>
+
+</resources>

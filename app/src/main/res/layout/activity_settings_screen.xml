@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.SettingsScreen">
+
+    <LinearLayout
+        android:id="@+id/logout_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:elevation="10dp"
+        android:background="@drawable/logout_back"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_logout_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="18sp"
+            android:textColor="@color/colorGray"
+            android:layout_gravity="center"
+            android:layout_marginTop="150dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:text="Are you sure you want to log out?"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:background="@drawable/bg_logout_btn"
+            android:text="log out"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/btn_logout_cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_pro_gray"
+            android:text="cancel"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/setting_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+
+            <ImageView
+                android:id="@+id/img_setting_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/ic_navigate_before_gray_24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Settings"
+                android:layout_centerInParent="true"
+                android:textSize="16dp"
+                android:textColor="@color/colorPrimaryDark"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorBtnGray"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/colorLightGray"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBtnGray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:id="@+id/img_logout"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/logout"/>
+
+                    <TextView
+                        android:id="@+id/tv_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logout"
+                        android:layout_toRightOf="@+id/img_logout"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/colorBlack"
+                        android:padding="5dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBtnGray"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/colorLightGray"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorBtnGray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:id="@+id/img_lock"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@mipmap/lock"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:id="@+id/tv_changePass"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Password"
+                        android:layout_toRightOf="@id/img_lock"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:textColor="@color/colorBlack"/>
+
+                    <ImageView
+                        android:id="@+id/img_eye"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@mipmap/eye_gray"
+                        android:padding="3dp"
+                        android:layout_centerVertical="true"/>
+
+                </RelativeLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_curPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/myEditTextLogin"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <EditText
+                        android:id="@+id/edt_curent_pass_set"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Current Password"
+                        android:paddingTop="5dp"
+                        android:longClickable="false"
+                        android:inputType="textPassword"
+                        android:singleLine="true"
+                        android:background="@color/colorTransparent"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_newPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/myEditTextLogin"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <EditText
+                        android:id="@+id/edt_new_pass_set"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="New Password"
+                        android:longClickable="false"
+                        android:inputType="textPassword"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:background="@color/colorTransparent"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_veriPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/myEditTextLogin"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp">
+
+                    <EditText
+                        android:id="@+id/edt_veri_pass_set"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Verify New Password"
+                        android:longClickable="false"
+                        android:inputType="textPassword"
+                        android:paddingTop="5dp"
+                        android:singleLine="true"
+                        android:background="@color/colorTransparent"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_change_pass"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_pro_gray"
+                    android:text="save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:enabled="false"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">Monet</string>
+
+    <string name="facebook_app_id">2147636608800003</string>
+    <string name="fb_login_protocol_scheme">fb2147636608800003</string>
+    <string name="google_places_key">AIzaSyApcG8fyXM5buWejUaqB1X9ig-wp-LXRGY</string>
+    <string name="web_client_id">1060651208397-hdirna1dtvb9g1pnouvho6jfgb33ilpl.apps.googleusercontent.com</string>
+
+    <string name="or_sign_text">Or sign in with your email</string>
+    <string name="forgot_text">Forgot <b>password?</b></string>
+    <string name="dont_have_account">Still do not have an account? <b>Sign Up</b></string>
+    <string name="create_account">Or create your account to get started</string>
+    <string name="register_sign">Already have an account? <b>Sign in</b></string>
+    <string name="monet_need">Monet needs a moment</string>
+    <string name="monet_needtwo">to help personalize your experience</string>
+    <string name="enter_email">Enter your email to reset your password</string>
+    <string name="forgot_sign_up">Still do not have an account? <b>Sign up</b></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_campaigns">Compaigns</string>
+    <string name="title_new">New</string>
+    <string name="title_popular">Popular</string>
+    <string name="title_more">Menu</string>
+
+    <string name="no_data">No campaign available right now.</string>
+    <string name="invite_frnd">Invite your friends to rate\nand earn rewards</string>
+
+    <string name="terms"><u>Terms</u></string>
+    <string name="short_clip_one">In the following study you will</string>
+
+    <string name="must_agree">In order to receive your reward you \nmust agree and follow the 3 coming \ninstructions.</string>
+    <string name="look_screen">Look at the screen without \ncovering your face</string>
+    <string name="good_light">Be in good light</string>
+
+    <string name="keep_face">Keep your face inside the camera capture\n until the 3 dots are completed</string>
+    <string name="complete_first">You have completed the \nfirst part of the campaign</string>
+    <string name="complete_secound">You have completed the \nsecound part of the campaign</string>
+    <string name="complete_third">You have completed the \nthird part of the campaign</string>
+    <string name="complete_fourth">You have completed the \nforth part of the campaign</string>
+    <string name="complete_congrats">Congratulations! you have completed the campaign</string>
+    <string name="proceed_first">Please proceed to complete \nthe next part.</string>
+    <string name="proceed_secound">Please procees to complete \nthe third part.</string>
+    <string name="proceed_third">Please procees to complete \nthe forth part.</string>
+    <string name="proceed_forth">Thank you for your participation!</string>
+
+    <string name="permission_camera_rationale">Access to the camera is needed for face detection</string>
+    <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  Allow permission from settings.</string>
+    <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+
+    <string name="title_logo">NATIONAL GEOGRAPHIC</string>
+    <string name="btn_skip_intro">Skip Intro</string>
+
+
+    <string name="error_player">There was an error initializing the YouTubePlayer (%1$s)</string>
+
+    <string name="reaction_firstPart_textOne">This part records your reactions</string>
+    <string name="reaction_firstPart_textTwo">In order to receive your reward you must agree and follow the 2 coming instructions.</string>
+
+    <string name="reaction_thirdPartText">Click this icon at any time to pause the video and share your reactions</string>
+
+    <string name="reaction_A">Like</string>
+    <string name="reaction_B">Love</string>
+    <string name="reaction_C">Want</string>
+    <string name="reaction_D">Memorable</string>
+    <string name="reaction_E">Dislike</string>
+    <string name="reaction_F">Accurate</string>
+    <string name="reaction_G">Misleading</string>
+    <string name="reaction_H">Engaging</string>
+    <string name="reaction_I">Boring</string>
+
+    <string name="reaction_fourText_one">A dialog box will appear when you click on reaction button</string>
+    <string name="reaction_fourText_two">Type the reason of your reaction, and press <b>Submit</b> to continue watching</string>
+
+    <string name="otp_text">please enter otp which you received on your register mobile number or email address</string>
+
+    <string name="question_first">This part records your\nanswers to a questionnaire</string>
+    <string name="question_secound">In order to receive your reward\nyou answer the following\nquestions.</string>
+
+
+</resources>

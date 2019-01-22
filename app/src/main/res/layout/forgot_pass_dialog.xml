@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/otp_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/colorBlack"/>
+
+    <EditText
+        android:id="@+id/edt_forgotPop_otp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/dob_box"
+        android:minHeight="45dp"
+        android:gravity="center"
+        android:longClickable="false"
+        android:textColor="@color/colorBlack"
+        android:hint="Please enter OTP"
+        android:maxLength="6"
+        android:inputType="number"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="2"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/btn_forgotPop_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_pro_activate"
+            android:text="cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/btn_forgotPop_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_pro_gray"
+            android:text="submit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</LinearLayout>

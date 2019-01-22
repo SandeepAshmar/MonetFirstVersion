@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_margin="15dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_dialogFive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dob_box"
+        android:maxHeight="80dp"
+        android:minHeight="100dp"
+        android:lines="4"
+        android:longClickable="false"
+        android:gravity="top|left"
+        android:textColor="@color/colorBlack"
+        android:padding="5dp"
+        android:hint="Type your reason here"
+        android:singleLine="false" />
+
+    <Button
+        android:id="@+id/btn_dialogFive"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_pro_activate"
+        android:text="submit"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

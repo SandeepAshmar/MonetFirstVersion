@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="myEditTextLogin">
+        <item name="colorPrimary">@color/colorGray</item>
+        <item name="colorPrimaryDark">@color/colorGray</item>
+        <item name="colorAccent">@color/colorGray</item>
+        <item name="android:textColorHint">@color/colorGray</item>
+        <item name="android:buttonStyleToggle">@color/colorGray</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/bg_color</item>
+    </style>
+
+
+    <style name="TimePickerTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorCalender</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CustomAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">#000</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">#000</item>
+        <!-- Used for the background -->
+        <!--<item name="android:background">#4CAF50</item>-->
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <!-- Used for the buttons -->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- Used for the title and text -->
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <!-- Used for the background -->
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <style name="Theme_Dialog" parent="android:Theme.Holo.Dialog.NoActionBar">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+</resources>

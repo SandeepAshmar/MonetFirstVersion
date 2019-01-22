@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".activity.PlayVideoAndRecordScreen">
+
+    <RelativeLayout
+        android:id="@+id/setting_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/monet_logo_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBtnGray" />
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_detect"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/circle" />
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtube_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@id/img_detect"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/videoLayout"
+        android:foregroundGravity="fill"
+        android:layout_marginBottom="20dp"/>
+
+    <RelativeLayout
+        android:id="@+id/videoLayout"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:visibility="visible">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/camera_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ic_photo_camera_black_24dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

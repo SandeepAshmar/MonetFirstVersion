@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_dialog"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:adjustViewBounds="false"
+                android:padding="2dp"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_dialogName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edt_dialogComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_box"
+            android:padding="10dp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="10dp"
+            android:gravity="top|left"
+            android:longClickable="false"
+            android:inputType="textMultiLine"
+            android:minHeight="80dp"
+            android:lines="3"
+            android:imeOptions="actionDone"
+            android:singleLine="false"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_pro_activate"
+        android:text="Submit"
+        android:textColor="@color/colorWhite"
+        android:textAllCaps="false"
+        android:layout_marginBottom="10dp"/>
+
+</LinearLayout>

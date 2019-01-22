@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.RegisterScreenSecond">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/bg_gesture"/>
+
+        <ImageView
+            android:id="@+id/img_regSec_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo_with_text"
+            android:adjustViewBounds="true"
+            android:layout_margin="30dp"/>
+
+        <TextView
+            android:id="@+id/tv_monetfir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monet_need"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_regSec_logo"
+            android:singleLine="false"
+            android:textColor="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/tv_monet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monet_needtwo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_monetfir"
+            android:singleLine="false"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorWhite"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/tv_monet"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/half_black">
+
+                <TextView
+                    android:id="@+id/tv_genderReg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GENDER"
+                    android:layout_margin="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorGray"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:id="@+id/male_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginRight="20dp">
+
+                        <ImageView
+                            android:id="@+id/img_male"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/male_unselect"/>
+
+                        <TextView
+                            android:id="@+id/tv_male"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Male"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorGray"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/female_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="20dp"
+                        android:layout_toRightOf="@id/male_ll">
+
+                        <ImageView
+                            android:id="@+id/img_female"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/female_unselect"/>
+
+                        <TextView
+                            android:id="@+id/tv_female"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Female"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorGray"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/half_black">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="DOB"
+                    android:layout_margin="10dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/colorGray"/>
+
+                <LinearLayout
+                    android:id="@+id/dob_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/dob_box"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_month"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Month"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:textColor="@color/colorGray"/>
+
+                    <TextView
+                        android:id="@+id/tv_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Day"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:textColorHint="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="@color/colorGray"/>
+
+                    <TextView
+                        android:id="@+id/tv_year"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="Year"
+                        android:textColor="@color/colorWhite"
+                        android:layout_marginRight="10dp"
+                        android:textColorHint="@color/colorWhite"
+                        android:layout_gravity="center"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/myEditTextLogin"
+                android:background="@drawable/half_black"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_reg_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:paddingTop="5dp"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="City"
+                    android:longClickable="false"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/myEditTextLogin"
+                android:background="@drawable/half_black"
+                android:layout_marginTop="5dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_reg_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorTransparent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:paddingTop="5dp"
+                    android:hint="State"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:longClickable="false"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:textColor="@color/colorWhite"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/half_black">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:ccp_contentColor="@color/colorWhite"/>
+
+                    <EditText
+                        android:id="@+id/edt_reg_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorTransparent"
+                        android:hint="Mobile number"
+                        android:layout_gravity="center"
+                        android:paddingRight="10dp"
+                        android:longClickable="false"
+                        android:maxLength="10"
+                        android:textColorHint="@color/colorGray"
+                        android:inputType="phone"
+                        android:singleLine="true"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp">
+
+                <CheckBox
+                    android:id="@+id/terms_check"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click here to agree the "
+                    android:textColor="@color/colorWhite"
+                    android:buttonTint="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/tv_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Terms"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorWhite"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_regSign"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="sign up"
+                android:textColor="@color/colorBtnGray"
+                android:background="@drawable/btn_gray_capsule"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

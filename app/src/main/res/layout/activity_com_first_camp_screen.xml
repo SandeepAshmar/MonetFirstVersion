@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThankyouPage">
+
+    <RelativeLayout
+        android:id="@+id/new_tab"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:src="@mipmap/monet_logo_top"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="60dp">
+
+            <TextView
+                android:id="@+id/tv_cam_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/complete_first"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="false"
+                android:textColor="@color/colorBlack"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center">
+
+                <com.github.lzyzsd.circleprogress.DonutProgress
+                    android:id="@+id/donut_progress_lodging"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="left|top"
+                    android:layout_marginLeft="30dp"
+                    app:donut_finished_color="@color/colorPrimaryDark"
+                    android:rotation="270"
+                    app:donut_finished_stroke_width="5dp"
+                    app:donut_unfinished_color="@color/colorGray"
+                    app:donut_unfinished_stroke_width="5dp"
+                    android:layout_centerInParent="true"/>
+
+                <TextView
+                    android:id="@+id/progress_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20sp"/>
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:id="@+id/tv_proceedText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/proceed_first"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:singleLine="false"
+                android:textColor="@color/colorBlack"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/btn_cam_proceed"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_pro_activate"
+                android:text="proceed"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

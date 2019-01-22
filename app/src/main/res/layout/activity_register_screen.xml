@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.RegisterScreenFirst">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/bg_gesture" />
+
+        <ImageView
+            android:id="@+id/reg_monet_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo_with_text"
+            android:layout_margin="30dp"
+            android:adjustViewBounds="true" />
+
+        <RelativeLayout
+            android:id="@+id/social_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:background="@drawable/half_black"
+            android:padding="15dp"
+            android:layout_below="@+id/reg_monet_logo">
+
+            <FrameLayout
+                android:id="@+id/fbFrameLayout"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content">
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/regfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_regfb"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/facebook_btn_bg"
+                    android:text="sign in"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="15dp"
+                    android:textColor="#ffffff"
+                    android:drawableLeft="@mipmap/facebook"/>
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/googleFrameLayout"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true">
+
+                <com.google.android.gms.common.SignInButton
+                    android:id="@+id/btn_reggoogle"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:elevation="2dp"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_google_reg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/google_btn_bg"
+                    android:text="sign in"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:layout_margin="5dp"
+                    android:elevation="2dp"
+                    android:paddingLeft="15dp"
+                    android:drawableLeft="@mipmap/google"/>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/createText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_account"
+            android:layout_below="@+id/social_layout"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorWhite"
+            android:layout_marginTop="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/reg_firstForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_below="@+id/createText">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/half_black">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/myEditTextLogin">
+
+                    <EditText
+                        android:id="@+id/edt_regFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="First Name"
+                        android:longClickable="false"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:paddingTop="5dp"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/colorWhite" />
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/half_black">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/myEditTextLogin">
+
+                    <EditText
+                        android:id="@+id/edt_regLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Last Name"
+                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                        android:longClickable="false"
+                        android:background="@android:color/transparent"
+                        android:paddingTop="5dp"
+                        android:textColor="@color/colorWhite"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/half_black">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/myEditTextLogin">
+
+                    <EditText
+                        android:id="@+id/edt_regEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Email Address"
+                        android:paddingTop="5dp"
+                        android:longClickable="false"
+                        android:inputType="text"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/colorWhite"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/half_black">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/myEditTextLogin"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/edt_regPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Password"
+                        android:paddingTop="5dp"
+                        android:longClickable="false"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/colorWhite"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/half_black">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_centerInParent="true"
+                    android:theme="@style/myEditTextLogin"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/edt_regConPass"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Confirm Password"
+                        android:paddingTop="5dp"
+                        android:longClickable="false"
+                        android:inputType="textPassword"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/colorWhite"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_regSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register_sign"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:layout_below="@+id/reg_firstForm"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_regNextFirst"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/btn_gray_capsule"
+            android:text="next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBtnGray"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@+id/tv_regSignIn"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"/>
+
+        <ProgressBar
+            android:id="@+id/regSocialProg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</ScrollView>

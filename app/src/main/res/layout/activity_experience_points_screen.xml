@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.ExperiencePointsScreen">
+
+    <RelativeLayout
+        android:id="@+id/experience_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:id="@+id/img_experience_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/ic_navigate_before_gray_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_exp_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience Points"
+            android:layout_centerInParent="true"
+            android:textSize="16dp"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGray"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsv_leaderBoard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/experience_tab_layout"
+        android:layout_above="@+id/btn_exp_layout"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_leaderBoard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"/>
+
+            <LinearLayout
+                android:id="@+id/ll_userLeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_above="@+id/btn_exp_layout"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_leadItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="5dp">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/ic_leader_image"
+                            android:layout_centerInParent="true"/>
+
+                        <TextView
+                            android:id="@+id/tv_leadUserRank"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorBlack"
+                            android:text="1"
+                            android:textSize="10dp"
+                            android:gravity="center"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="15dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/circle"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/img_leadUserImage"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_margin="5dp"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="2dp">
+
+                        <TextView
+                            android:id="@+id/tv_leadName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="You"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp" />
+
+                        <TextView
+                            android:id="@+id/tv_leadUserPoints"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="points"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginRight="10dp"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignBottom="@id/ll_leadItem"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/colorGray"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="60dp"
+        android:orientation="vertical">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_lastVideo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+    </LinearLayout>
+    <!--Leader board layout-->
+    <LinearLayout
+        android:id="@+id/btn_exp_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_xpcp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/btn_pro_activate"
+            android:text="xp points"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:id="@+id/btn_leaderboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/btn_pro_activate"
+            android:text="Leaderboard"
+            android:textAllCaps="false"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <!--xp cp layout-->
+
+
+</RelativeLayout>

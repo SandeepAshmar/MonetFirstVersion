@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qCards.FaceDetectInstructions"
+    android:id="@+id/main_layout">
+
+    <RelativeLayout
+        android:id="@+id/new_tab"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <ImageView
+            android:id="@+id/img_landSecBack"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/ic_navigate_before_gray_24dp" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:src="@mipmap/monet_logo_top" />
+
+    </RelativeLayout>
+
+    <SeekBar
+        android:id="@+id/sb_faceIns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:max="4"
+        android:min="1"
+        android:clickable="false"
+        android:progress="1"
+        android:thumb="@color/colorPrimaryDark"
+        android:progressBackgroundTint="@color/colorPrimaryDark"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_faceIns_count"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_marginRight="15dp"-->
+        <!--android:layout_marginTop="70dp"-->
+        <!--android:hint="1/4" />-->
+
+    <LinearLayout
+        android:id="@+id/faceIns_firstll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_user_detect"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="This part records your expressions"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="@string/must_agree"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/faceIns_firstBtnll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btn_faceIns_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_exit"
+            android:text="exit"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <Button
+            android:id="@+id/btn_faceIns_proceed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pro_activate"
+            android:text="proceed"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/faceIns_allowCamera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Allow your camera"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/ic_camera" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/btn_faceIns_allow"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_pro_activate"
+                style="?android:attr/buttonStyleSmall"
+                android:text="next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite"
+                android:layout_gravity="center_horizontal|bottom"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/faceIns_lookScreen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/look_screen"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_look_at_screen"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btn_faceIns_look"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_pro_activate"
+            android:text="next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/faceIns_goodLight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:layout_gravity="center"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="@string/good_light"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ic_lighting"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|bottom"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btn_faceIns_light"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_pro_activate"
+            android:text="next"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

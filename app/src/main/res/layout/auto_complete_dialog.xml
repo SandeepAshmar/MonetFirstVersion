@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <AutoCompleteTextView
+        android:id="@+id/input_Dialogsearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter city name"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:background="@drawable/dob_box"
+        android:longClickable="false"
+        android:minHeight="40dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:drawableRight="@drawable/ic_search_gray_24dp"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/powered_by_google"/>
+
+</LinearLayout>
